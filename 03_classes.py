@@ -29,3 +29,34 @@ print(id(car1))
 
 car.start()
 car.increase_speed(40)
+
+
+
+
+
+
+# Another example of classes
+class Fruit:
+    color = "red"
+    weight = 0.6
+    price = 55
+
+    def __init__(self, color, weight, price):
+        self.color = color
+        self.weight = weight
+        self.price = price
+        print(f"Fruit object created with color {self.color}, weight {self.weight} kg, and price {self.price}$")
+    
+    def get_info(self):
+        return f"Color: {self.color}, Weight: {self.weight} kg, Price: {self.price} $"
+    
+    def change_price(self, new_price):
+        self.price = new_price
+        print(f"Price updated to {self.price} $")
+    
+
+fruit = Fruit("blue", "0.2", "44")
+fruit.change_price(66)
+
+print(fruit.get_info())
+
