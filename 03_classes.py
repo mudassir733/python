@@ -59,4 +59,3 @@ fruit = Fruit("blue", "0.2", "44")
 fruit.change_price(66)
 
 print(fruit.get_info())
-
